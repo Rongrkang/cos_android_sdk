@@ -72,14 +72,14 @@ public class BizService {
      * @return
      */
     public String getLocalSign(){
-        String secretId = "AKIDtgHguxSsaEykZHoIfqtlT1NY0MWTn4B5";
-        String secretKey = "rWyGVcXHpCjDOSMaheQSNGyMfstiOAqu";
+        String secretId = "XXX";
+        String secretKey = "XXX";
         LocalCredentialProvider localCredentialProvider = new LocalCredentialProvider(secretKey);
         return localCredentialProvider.getSign(appid, bucket, secretId, null, 60 * 60);
     }
     public String getLocalOnceSign(String fileId){
-        String secretId = "AKIDtgHguxSsaEykZHoIfqtlT1NY0MWTn4B5";
-        String secretKey = "rWyGVcXHpCjDOSMaheQSNGyMfstiOAqu";
+        String secretId = "XXX";
+        String secretKey = "XXX";
         LocalCredentialProvider localCredentialProvider = new LocalCredentialProvider(secretKey);
         return localCredentialProvider.getSign(appid, bucket, secretId, fileId, 60 * 60);
     }
